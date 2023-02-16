@@ -1,1 +1,3 @@
 #!/bin/bash
+gcc -c $CFILE -o 2-main.s
+

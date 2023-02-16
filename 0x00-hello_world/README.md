@@ -3,3 +3,4 @@
 
 
 * 1-compiler --- Compiles a c file but doesnt link
+* 2-assembler ---- generates the assembly code of a C code and save it in an output file
