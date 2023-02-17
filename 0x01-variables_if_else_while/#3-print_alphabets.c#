@@ -9,13 +9,15 @@ int main(void)
 {
 char lcase;
 char ucase;
-for (lcase = 'a'; lcase <= 'z'; lcase++)
+while (lcase <= 'z')
 {
 putchar(lcase);
+lcase++;
 }
 for (ucase = 'A'; ucase <= 'Z'; ucase++)
 {
 putchar(ucase);
+ucase++;
 }
 putchar('\n');
 return (0);
