@@ -1,19 +1,18 @@
-#include <unistd.h>
 #include "main.h"
 
 /**
  *print_alphabet - Prints alphabet
- *Return: 0 on sucess
+ *Return: Void
  */
 
 void print_alphabet(void)
 {
-char letter = 'a';
-while (letter <= 'z')
+char character = 'a';
+
+while (character <= 'z')
 {
-_putchar(letter);
-letter++;
+_putchar(character);
+character++;
 }
 _putchar('\n');
-return (0);
 }
