@@ -1,10 +1,3 @@
-#include "main.h"
-
-/**
- * main - Main function here
- * Return: Always 0 when successful
- */
-
 void print_alphabet(void)
 {
 char letter = 'a';
