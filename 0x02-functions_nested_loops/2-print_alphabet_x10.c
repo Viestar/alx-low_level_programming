@@ -1,13 +1,14 @@
-#include <unistd.h>
 #include "main.h"
+
 /**
- *print_alphabet - Prints alphabet
- *Return: 0 on sucess
+ *print_alphabet_x10 - Prints alphabet ten times
+ *Return: Void
  */
 
 void print_alphabet_x10(void)
 {
 int count = 0;
+
 while (count <= 10)
 {
 char letter = a;
@@ -19,5 +20,4 @@ letter++;
 _putchar('\n');
 count++;
 }
-return (0);
 }
