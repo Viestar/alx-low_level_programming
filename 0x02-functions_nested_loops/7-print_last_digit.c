@@ -15,6 +15,6 @@ if (n < 0)
 {
 last = last * -1
 }
-_putchar('0' + last);
+_putchar(last + '0');
 return (last);
 }
