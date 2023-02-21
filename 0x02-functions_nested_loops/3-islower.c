@@ -9,14 +9,9 @@
 
 int _islower(int c)
 {
-int lchar = 'a';
-
-for (lchar = 'a'; lcahr <= 'z'; lcahr++)
-{
-if (c == lchar)
+if (c >= 97 && c <= 122)
 {
 return (1);
-}
 }
 return (0);
 }
