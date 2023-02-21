@@ -34,7 +34,7 @@ _putchar(':');
 _putchar(first_minutes);
 _putchar(last_minutes);
 _putchar('\n');
-minutes_ones++;
+last_minutes++;
 }
 last_minutes = '0';
 first_minutes++;
