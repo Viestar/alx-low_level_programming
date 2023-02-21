@@ -9,7 +9,7 @@
 
 int _islower(int c)
 {
-char lchar;
+int lchar = 'a';
 
 for (lchar = 'a'; lcahr <= 'z'; lcahr++)
 {
@@ -17,9 +17,6 @@ if (c == lchar)
 {
 return (1);
 }
-else
-{
+}
 return (0);
-}
-}
 }
