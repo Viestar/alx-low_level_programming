@@ -20,7 +20,7 @@ if (col == 0)
 {
 _putchar('0');
 }
-else if (mulitple < 10)
+else if (multiple < 10)
 {
 _putchar(',');
 _putchar(' ');
