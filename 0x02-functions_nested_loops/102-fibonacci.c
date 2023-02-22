@@ -7,24 +7,22 @@
 
 int main(void)
 {
-int n 1;
-long a = 1;
-long b = 2;
-
-while (n <= 50)
+long int a, b, c, d;
+b = 1;
+c = 2;
+for (a = 1; a <= 50; ++a)
 {
-if (n == 1)
-printf("%ld", a);
-else if (n == 2)
-printf(", %ld", b);
+if (b != 20365011074)
+{
+printf("%ld, ", b);
+}
 else
 {
-b += a;
-a = b - a;
-printf(", %ld", b);
+printf("%ld\n", b);
 }
-++n;
+d = b + c;
+b = c;
+c = d;
 }
-printf("\n");
 return (0);
 }
