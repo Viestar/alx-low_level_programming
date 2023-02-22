@@ -14,13 +14,15 @@ int multiple = i * j;
 
 if (n >= 0 && n <= 15)
 {
-for (i = 0; i <= n; i++)
+while (i >= 0 && i <= n)
 {
-for (j = 0; j <= n; j++)
+while (j >= 0 && j <= n)
 {
 _putchar(multiple);
 _putchar('\n');
+j++;
 }
+i++;
 }
 }
 }
