@@ -8,14 +8,9 @@
 
 int _isupper(int c)
 {
-int nc;
-
-for (nc = 65; nc < 133; nc++)
-{
-if (c == nc)
+if (c >= 65 && c <= 90)
 {
 return (1);
 }
 return (0);
-}
 }
