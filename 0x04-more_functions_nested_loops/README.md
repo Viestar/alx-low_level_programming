@@ -10,3 +10,4 @@
 * 7-print_diagonal.c --- print a diagonal from backlashes
 * 8-print_square.c --- prints hash n times
 * 9-fizz_buzz --- Real fixxbuzz
+* 10-print_triangle.c --- prints triangle
