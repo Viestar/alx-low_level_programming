@@ -7,3 +7,4 @@
 * 4-print_most_numbers.c --- functions that prints numbers 0 to 9 besides 2 and 4
 * 5-more_numbers --- A function printing 0-14 ten times
 * 6-print_line.c --- a funtion printing n given number of undrescores
+* 7-print_diagonal.c --- print a diagonal from backlashes
