@@ -4,4 +4,4 @@
 
 ## Here are some debugged examples. Source bugged files are in bugged_files directory.
 
-* 0-main.c -- Amended the function to give the correct output when given a case of 0
+* 0-main.c -- Amended the function to give the correct output when given a case of 0* 1-main.c ---- Commented out the infinite loop causer
