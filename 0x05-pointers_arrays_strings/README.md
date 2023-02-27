@@ -8,3 +8,4 @@
 * **3. I do not fear computers. I fear the lack of them >> path/3-puts.c**  ----> A function that prints a string, followed by a new line.
 * **4. I can only go one way. I've not got a reverse gear >> path/4-print_rev.c** -----> A function that prints a string, in reverse, followed by a new line
 * **5. A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes >>> path/5-rev_string** -----> A function that reverses a string.
+* **6. Half the lies they tell about me aren't true >> path/6-puts2.c** ----> A function that prints every other character of a string, starting with the first character.
