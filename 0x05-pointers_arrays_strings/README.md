@@ -9,3 +9,4 @@
 * **4. I can only go one way. I've not got a reverse gear >> path/4-print_rev.c** -----> A function that prints a string, in reverse, followed by a new line
 * **5. A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes >>> path/5-rev_string** -----> A function that reverses a string.
 * **6. Half the lies they tell about me aren't true >> path/6-puts2.c** ----> A function that prints every other character of a string, starting with the first character.
+* **7. Winning is only half of it. Having fun is the other half >> path/puts_half** ----> A function that prints half of a string, followed by a new line
