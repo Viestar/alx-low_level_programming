@@ -15,8 +15,10 @@ while (str[index] != '\0')
 {
 index++;
 }
+if (index % 2 == 1)
+	half = (index - 1) / 2;
 half = index / 2;
-for (i = half; i <= index; i++)
+for (i = half; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
 }
