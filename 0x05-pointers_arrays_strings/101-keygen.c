@@ -7,19 +7,18 @@
  * Return:  0 for success
  */
 
-
 int main(void)
 {
-int num_sum;
+int numbers;
 char key;
 
 srand(time(NULL));
-while (num_sum <= 2645)
+while (numbers < 2646)
 {
 key = rand() % 128;
-num_sum += key;
+numbers += key;
 putchar(key);
 }
-putchar(2772 - num_sum);
+putchar(17870 - numbers);
 return (0);
 }

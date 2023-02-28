@@ -12,3 +12,5 @@
 * **7. Winning is only half of it. Having fun is the other half >> path/puts_half** ----> A function that prints half of a string, followed by a new line
 * **8. Arrays are not pointers >>> path/8-print_array.c** ----> A function that prints n elements of an array of integers, followed by a new line.
 * **9. strcpy >>> path/9-strcpy.c** ----> A function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest
+* **10. Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers >>>>> path/100-atoi.c** A Functions that converts a string into an integer.
+* **11. Don't hate the hacker, hate the code >>> path/101-keygen.c** ----> A program that generates random valid passwords for the program 101-crackme.
