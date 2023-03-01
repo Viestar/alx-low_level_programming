@@ -2,6 +2,7 @@
 
 /**
  * main - whatever
+ * Return: void
  */
 
 int main(void)
