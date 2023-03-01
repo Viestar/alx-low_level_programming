@@ -6,3 +6,4 @@
 ## 0x04 More functions and nested loops.
 ## 0x05 Pointers arrays and strings
 
+## 0x06. C - More pointers, arrays and strings
