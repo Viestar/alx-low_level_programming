@@ -8,19 +8,13 @@
 
 char *string_toupper(char *str)
 {
-	int index;
-	int len = 0;
+	int counter = 0;
 
-	while (str[index])
+	while (str[counter])
 	{
-		len++; /* Length of the string */
-		index++;
-	}
-
-	for (index = 0; index <= len; index++)
-	{
-		if (str[index] >= 'a' && str[index] <= 'z')
-			str[index] -= 32; /* The difference btn A(65) and a(97) */
+		if (str[counter] >= 97 && str[counter] <= 122)
+			str[counter] -= 32; /* The difference btn A(65) and a(97) */
+		counter++;
 	}
 	return (str);
 }
