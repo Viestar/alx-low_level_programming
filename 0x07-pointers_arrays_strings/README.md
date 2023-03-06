@@ -16,3 +16,4 @@
 
 ## **7. The line of life is a ragged diagonal between duty and desire >>> path/8-print_diagsums.c** >-->> A function that prints the sum of the two diagonals of a square matrix of integers.
 
+## **8. Double pointer, double fun >>> path/100-set_string.c** >-->> A function that sets a value of a pointer to a char
