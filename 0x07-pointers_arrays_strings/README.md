@@ -10,4 +10,9 @@
 
 ## **4. strpbrk >>> path/4-strpbrk.c** >-->> A function that searches a string for any of a set of bytes.
 
-## **5. strstr >>> path/5-strstr.c** A function that locates a substring.
+## **5. strstr >>> path/5-strstr.c** >-->> A function that locates a substring.
+
+## **6. Chess is mental torture >>> path/7-print_chessboard.c** >->> A function that prints a chaseboard.
+
+## **7. The line of life is a ragged diagonal between duty and desire >>> path/8-print_diagsums.c** >-->> A function that prints the sum of the two diagonals of a square matrix of integers.
+
