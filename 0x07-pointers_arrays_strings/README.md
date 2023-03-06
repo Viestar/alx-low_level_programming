@@ -7,3 +7,5 @@
 ## **2. strchr >>> path/2-strchr.c** >-->> A function that locates a character in a string.
 
 ## **3. strspn >>> path/3-strspn.c** >-->> A function that gets the length of a prefix substring.
+
+## **4. strpbrk >>> path/4-strpbrk.c** >-->> A function that searches a string for any of a set of bytes.
