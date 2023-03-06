@@ -6,3 +6,4 @@
 
 ## **2. strchr >>> path/2-strchr.c** >-->> A function that locates a character in a string.
 
+## **3. strspn >>> path/3-strspn.c** >-->> A function that gets the length of a prefix substring.
