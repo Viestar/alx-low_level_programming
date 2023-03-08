@@ -6,3 +6,5 @@
 
 ## **2. Dreams feel real while we're in them. It's only when we wake up that we realize something was actually strange >>> path/-strlen_recursion.c** >-->> A function that returns the length of a string
 
+## **3. You mustn't be afraid to dream a little bigger, darling >>> path/3-factorial.c** >-->> A function that returns the factorial of a given number.
+
