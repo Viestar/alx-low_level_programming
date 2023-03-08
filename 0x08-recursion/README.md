@@ -13,3 +13,5 @@
 ## **5. Your subconscious is looking for the dreamer >>> path/5-sqrt_recursion.c** >-->> A function that returns the natural square root of a number.
 
 ## **6. Inception. Is it possible? >>> path/6-is_prime_number.c** >-->> A function that returns 1 if the input integer is a prime number, otherwise return 0.
+
+## **7. They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything >>> path/100-is_palindrome.c** >-->> A function that returns 1 if a string is a palindrome and 0 if not
