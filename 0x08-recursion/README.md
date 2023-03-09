@@ -15,3 +15,5 @@
 ## **6. Inception. Is it possible? >>> path/6-is_prime_number.c** >-->> A function that returns 1 if the input integer is a prime number, otherwise return 0.
 
 ## **7. They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything >>> path/100-is_palindrome.c** >-->> A function that returns 1 if a string is a palindrome and 0 if not
+
+## **8. Inception. Now, before you bother telling me it's impossible... >>> path/101-wildcmp.c** >>-->> A function that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0.
