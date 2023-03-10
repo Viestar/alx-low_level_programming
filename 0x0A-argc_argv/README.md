@@ -9,3 +9,5 @@
 ## **3. Neither irony nor sarcasm is argument >>> path/3-mul.c** >-->> A program that multiplies two numbers.
 
 ## **3. 4. To infinity and beyond >>> path4-add.c** >-->> A a program that adds positive numbers..
+
+## **5. Minimal Number of Coins for Change >>> path 100-change.c** >-->> A program that prints the minimum number of coins to make change for an amount of money.
