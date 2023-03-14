@@ -8,4 +8,6 @@
 
 ## **3. If you even dream of beating me you'd better wake up and apologize >> path/3-alloc_grid.c** >-->> A function that returns a pointer to a 2 dimensional array of integers.
 
-## **4. It's not bragging if you can back it up >> path/4-free_grid.c** >-->> A unction that frees a 2 dimensional grid previously created by your alloc_grid function.
+## **4. It's not bragging if you can back it up >> path/4-free_grid.c** >-->> A function that frees a 2 dimensional grid previously created by your alloc_grid function.
+
+## **5. It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe >> path/100-argstostr.c** >-->> A function that concatenates all the arguments of your program
