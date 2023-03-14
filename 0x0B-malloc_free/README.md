@@ -5,3 +5,5 @@
 ## **1. The woman who has no imagination has no wings >> path/1-strdup.c** >-->> A function that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
 
 ## **2. He who is not courageous enough to take risks will accomplish nothing in life >> path/2-str_concat.c** >-->> A function that concatenates two strings.
+
+## **3. If you even dream of beating me you'd better wake up and apologize >> path/3-alloc_grid.c** >-->> A function that returns a pointer to a 2 dimensional array of integers.
