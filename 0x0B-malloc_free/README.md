@@ -11,3 +11,5 @@
 ## **4. It's not bragging if you can back it up >> path/4-free_grid.c** >-->> A function that frees a 2 dimensional grid previously created by your alloc_grid function.
 
 ## **5. It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe >> path/100-argstostr.c** >-->> A function that concatenates all the arguments of your program
+
+## **6. I will show you how great I am >> path/101-strtow.c** >-->> A function that splits a string into words.
