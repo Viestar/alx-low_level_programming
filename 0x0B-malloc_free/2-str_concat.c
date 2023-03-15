@@ -6,15 +6,17 @@ int calculate_length(char *s1, char *s2);
 
 /**
  * str_concat - Adds two strings at a new location.
- * @s1: The string to be concatenated upon.
+ * @s1: The stri ng to be concatenated upon.
  * @s2: The string to be concatenated to s1.
  * Return: pointer to @bonded_string or NULL for failure
  */
+
 
 char *str_concat(char *s1, char *s2)
 {
 	char *bonded_string; /* string container to user for bonding */
 	int index, index_s1, double_index, double_length;
+
 
 	index = index_s1 = double_length  = 0;
 
@@ -29,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 
 	/* Allocating memory for the @bonded_string */
-	bonded_string = malloc(sizeof(char) * double_length);
+	bonded_string = malloc(sizeof(char) * (double_length + 1));
 
 	if (bonded_string == NULL)
 		return (NULL);
