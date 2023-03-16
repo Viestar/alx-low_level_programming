@@ -15,3 +15,4 @@
 ## **0x09** Static libraries
 ## **0x0A** Argc and Argv
 ## **0x0B** C - Malloc, Free
+## **0x0C** C - More Malloc, Free
