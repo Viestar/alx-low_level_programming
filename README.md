@@ -1,5 +1,10 @@
+
 # ALX Low level Programming
-## Starting with C language
+
+![Low Level stuff](assets/lowlevel.png)
+
+> ## Starting with C language
+
 ## **0X00** Hello world - Introductory
 ## **0x01** Functions and nested loops
 ## **0x03** Debugging
