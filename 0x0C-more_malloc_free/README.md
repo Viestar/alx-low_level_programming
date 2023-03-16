@@ -1,7 +1,7 @@
 
 # **0x0C. C - More malloc, free**
 
-![More Mallocs](../assets/malloc.png)
+![More Mallocs](assets/moremalloc.png)
 
 # Tasks
 
@@ -23,4 +23,9 @@ A function that allocates memory for an array, using malloc.
 ## **3. array_range**
 A function that creates an array of integers.
 > int *array_range(int min, int max);
-[3-array_range.c](https://github.com/Viestar/alx-low_level_programming/commit/f8cf982b46b634e900fed3f2baeabe31f857b61d)
+[3-array_range.c](https://github.com/Viestar/alx-low_level_programming/commit/dbaa558db72ac4a84b67646471b5865e799c984e)
+
+## **4. _realloc**
+A  function that reallocates a memory block using malloc and free.
+> void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+[100-realloc.c](https://github.com/Viestar/alx-low_level_programming/commit/dbaa558db72ac4a84b67646471b5865e799c984e)

@@ -19,10 +19,12 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	/* Calculating the length of the array
-	for (index = min; index <= max; index++)
-		array_length++;
-		*/
+	/**
+	* Calculating the length of the array
+	* for (index = min; index <= max; index++)
+	*	array_length++;
+	*/
+
 	array_length = max - min + 1;
 
 	/* Allocating required memory for the array*/
@@ -33,7 +35,7 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	/* Populating the array with items between min and max */
-	while (index < array_length )
+	while (index < array_length)
 	{
 		array[index] = min++;
 		index++;
