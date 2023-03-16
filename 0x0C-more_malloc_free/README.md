@@ -18,4 +18,9 @@ A function that concatenates two strings.
 ## **2. _calloc**
 A function that allocates memory for an array, using malloc.
 > void *_calloc(unsigned int nmemb, unsigned int size);
-[2-calloc.c](https://github.com/Viestar/alx-low_level_programming/commit/be761cccbde1074efbf62f26c5ed880a80b88b63)
+[2-calloc.c](https://github.com/Viestar/alx-low_level_programming/commit/f8cf982b46b634e900fed3f2baeabe31f857b61d)
+
+## **3. array_range**
+A function that creates an array of integers.
+> int *array_range(int min, int max);
+[3-array_range.c](https://github.com/Viestar/alx-low_level_programming/commit/f8cf982b46b634e900fed3f2baeabe31f857b61d)
