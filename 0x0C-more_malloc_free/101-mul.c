@@ -20,14 +20,14 @@ int main(int argc, char *argv[])
 	/* Exiting the program if not enough arguments are passed */
 	if (nr_args != 3)
 	{
-		printf("Error\nr_args");
+		printf("Error\n");
 		exit(98);
 	}
 
 	/* Exiting the program incase empty arguments are passed */
 	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
-		printf("Error\nr_args");
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 	nr2 = isdigit(*argv[2]);
 	if (!nr1 || !nr2)
 	{
-		printf("Error\nr_args");
+		printf("Error\n");
 		exit(98);
 	}
 
