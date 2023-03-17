@@ -28,4 +28,9 @@ A function that creates an array of integers.
 ## **4. _realloc**
 A  function that reallocates a memory block using malloc and free.
 > void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
-[100-realloc.c](https://github.com/Viestar/alx-low_level_programming/commit/dbaa558db72ac4a84b67646471b5865e799c984e)
+[100-realloc.c](https://github.com/Viestar/alx-low_level_programming/commit/cca7a704e81aaf80dd5cde32020f9d3c0181c6f6)
+
+## **5. We must accept finite disappointment, but never lose infinite hope**
+A program that multiplies two positive numbers.
+> int main(int argc, char *argv[]);
+[101-mul.c](https://github.com/Viestar/alx-low_level_programming/commit/3460ffe1aa06249e10f24199c096e2e87c32420b)
