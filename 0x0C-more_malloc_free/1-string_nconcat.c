@@ -21,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL) /* Checking if s2 is empty */
 		s2 = "";
 
-	/* Looping through s2 to catch its length */
+	/* Looping through s2 to catch how many items to add to s1 */
 	while (s2[index] && index <= n)
 	{
 		length_s1++;
@@ -34,18 +34,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	total_length = length_s2 + length_s1;
 
 	/* Allocating memory for the new string */
-	bonded_string = malloc(sizeof(char) * (total_length + 1));
+	bonded_string = malloc(sizeof(char) * (total_length));
 
 	/* Checking if any memory was created */
 	if (bonded_string == NULL)
 		return (NULL);
 
-	/* Copying contents of s1 into the new string*/
+	/* Copying contents of s1 into the new string */
 	for (index = 0; s1[index] != '\0'; index++)
 		bonded_string[index] = s1[index];
 	/* Copying contents of s2 */
-	for (count = 0; s2[count] != '\0'; count++, index++)
-		bonded_string[index] = s2[count];
+	for (count = 0; s2[count] != '\0' && count < n; count++)
+		bonded_string[index + count] = s2[count];
 	/* Adding Null to the end of the string */
 	bonded_string[total_length] = '\0';
 
