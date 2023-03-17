@@ -1,7 +1,7 @@
 
 # **0x0C. C - More malloc, free**
 
-![More Mallocs](assets/lowlevel.png)
+![More Mallocs](assets/moremalloc.png)
 
 # Tasks
 
