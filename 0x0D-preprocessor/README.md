@@ -1,9 +1,11 @@
 # **0x0D. C - Preprocessor**
 
-> The process
+> ## The process
+
 ![Processors](assets/process.jpeg)
 
-> Contents
+> ## Contents
+
 ![Contents](assets/descriptions.png)
 
 
