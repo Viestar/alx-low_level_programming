@@ -27,8 +27,11 @@ A program that prints the name of the file it was compiled from, followed by a n
 
 ## **03. Function-like macro**
 A function-like macro ABS(x) that computes the absolute value of a number x
-> [3-function_like_macro.h](https://github.com/Viestar/alx-low_level_programming/commit/a058d7ebec720b800362f68c4907d9bdd5425d01)
+> [3-function_like_macro.h](https://github.com/Viestar/alx-low_level_programming/commit/f2c480507ada83208dcbe64cf2449edaf49dee42)
 
 
 ## **4. SUM**
+A function-like macro SUM(x, y) that computes the sum of the numbers x and y.
+> [4-sum.h](https://github.com/Viestar/alx-low_level_programming/commit/f2c480507ada83208dcbe64cf2449edaf49dee42)
+
 
