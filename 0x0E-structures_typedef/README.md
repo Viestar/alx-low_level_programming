@@ -1,8 +1,8 @@
 **0x0E. C - Structures, typedef**
 
-> ### A Structure is a user defined data types with multiple related variables,
-### They could be of different data types and are stored in one block of memory.
-### They are like **Classes** of languages like **Python** without methods though.
+> #### A Structure is a user defined data types with multiple related variables,
+> #### They could be of different data types and are stored in one block of memory.
+> #### They are like **Classes** of languages like **Python** without methods though.
 
 
 > ## In a snapshot
