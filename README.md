@@ -44,3 +44,9 @@
 
 ## **0x0C** [C - More Malloc, Free](https://github.com/Viestar/alx-low_level_programming/tree/master/0x0C-more_malloc_free)
 > Description coming soon...
+
+## **0x0D** [C - Preprocessor](https://github.com/Viestar/alx-low_level_programming/tree/master/0x0D-preprocessor)
+> Description coming soon...
+
+## **0x0E** [C - Structures, typedef](https://github.com/Viestar/alx-low_level_programming/tree/master/0x0E-structures_typedef)
+> Description coming soon...
