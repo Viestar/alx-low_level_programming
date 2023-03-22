@@ -1,11 +1,12 @@
 # **0x0F. C - Function pointers**
 
-> ## NUTSHELL
+## NUTSHELL
 > #### - A function pointer stores an address of function.
 > #### - It points to the code of the fucntion and the first byte in particular.
 
 
-> ## SNAPSHOT
+
+## SNAPSHOT
 ![Structs](assets/fp.png)
 
 
