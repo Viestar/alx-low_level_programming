@@ -2,7 +2,7 @@
 
 ## NUTSHELL
 > #### - A function pointer stores an address of function.
-> #### - It points to the code of the fucntion and the first byte in particular.
+> #### - It points to the code of the function and the first byte in particular.
 
 
 
@@ -24,4 +24,12 @@ A function that executes a function given as a parameter on each element of an a
 
 ## **2. To hell with circumstances; I create opportunities**
 A function that searches for an integer.
-> [2-int_index.c](https://github.com/Viestar/alx-low_level_programming/commit/)
+> [2-int_index.c](https://github.com/Viestar/alx-low_level_programming/commit/51462321dc636c4b2952824864695f9eb0a2c5a8)
+
+
+
+
+
+## **4. Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker**
+A  program that prints the opcodes of its own main function.
+> [100-main_opcodes.c](https://github.com/Viestar/alx-low_level_programming/commit/)
