@@ -17,6 +17,10 @@ int sum_them_all(const unsigned int n, ...)
 
 	index = sum = 0;
 
+	/* returning 0 incase no required arguments are passed */
+	if (n == 0)
+		return (0);
+
 	/* Using va_start macro from stdarg.h to initialise list of arguments*/
 	va_start(arguments, n);
 
