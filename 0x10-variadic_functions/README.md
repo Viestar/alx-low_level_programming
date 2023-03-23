@@ -13,3 +13,17 @@
 > > > 4. etc.
 
 
+## SNAPSHOT
+![Structs](assets/fp.png)
+
+
+# Tasks
+
+## **0. Beauty is variable, ugliness is constant**
+A function that returns the sum of all its parameters.
+> [0-print_numbers.c](https://github.com/Viestar/alx-low_level_programming/commit/94fdeb4c372bcb3b82a797d084522efefd457c7f)
+
+
+## **1. To be is to be the value of a variable**
+A function that prints numbers, followed by a new line.
+> [1-print_numbers.c](https://github.com/Viestar/alx-low_level_programming/commit/)
