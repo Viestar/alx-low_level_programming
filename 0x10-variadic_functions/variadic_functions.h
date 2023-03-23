@@ -8,6 +8,20 @@
  */
 
 
+/**
+ * struct printff - A new struct type defining a printff.
+ * @symbol: Datatype symbol.
+ * @print: function pointer.
+ */
+
+typedef struct printff
+{
+	char *symbol;
+	void (*print)(va_list args);
+
+} f;
+
+
 /* Prototypes */
 void _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
