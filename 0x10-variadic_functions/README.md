@@ -38,4 +38,6 @@ A function that prints strings, followed by a new line.
 
 
 ## **3. To be is a to be the value of a variable**
-> Coming soon
+A function that prints anything
+> [2-print_strings.c](https://github.com/Viestar/alx-low_level_programming/commit/c3435c34437c5e173a30aee5c8be4d6a49bf8432)
+

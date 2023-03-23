@@ -38,7 +38,8 @@ void print_all(const char * const format, ...)
 	{
 		index_one = 0;
 
-		while (index_one < 4 && (*(format + index_two) != *(funcs[index_one].symbol)))
+		while (index_one < 4
+		&& (*(format + index_two) != *(funcs[index_one].symbol)))
 			index_one++;
 
 		if (index_one < 4)
