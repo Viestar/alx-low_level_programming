@@ -28,7 +28,7 @@ size_t print_list(const list_t *h); /* Prints elements */
 size_t list_len(const list_t *h); /* Counts elements */
 list_t *add_node(list_t **head, const char *str); /* inserts first node */
 list_t *add_node_end(list_t **head, const char *str); /* Inserts last node */
-void free_list(list_t *head);
+void free_list(list_t *head); /*Frees a list*/
 
 
 #endif /* LISTS_H */

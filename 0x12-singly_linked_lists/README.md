@@ -23,6 +23,11 @@ A function that adds a node at the beginning of a list.
 > [2-add_node.c](https://github.com/Viestar/alx-low_level_programming/commit/2840e68695e1f805ee7f822d647aa70dd61f655d)
 
 
-## **2. Add node at the end**
+## **3. Add node at the end**
 A function that adds a node at the end of a list.
-> [3-add_node_end.c](https://github.com/Viestar/alx-low_level_programming/commit/)
+> [3-add_node_end.c](https://github.com/Viestar/alx-low_level_programming/commit/d19a62cb20832a52bc208e716298bff104ba31da)
+
+
+## **4. Free list**
+A function that frees a list.
+> [4-free_list.c](https://github.com/Viestar/alx-low_level_programming/commit/)
