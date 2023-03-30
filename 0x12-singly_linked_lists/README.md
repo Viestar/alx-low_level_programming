@@ -20,4 +20,9 @@ A function that returns the number of elements in list_t.
 
 ## **2. Add node**
 A function that adds a node at the beginning of a list.
-> [2-add_node.c](https://github.com/Viestar/alx-low_level_programming/commit/)
+> [2-add_node.c](https://github.com/Viestar/alx-low_level_programming/commit/2840e68695e1f805ee7f822d647aa70dd61f655d)
+
+
+## **2. Add node at the end**
+A function that adds a node at the end of a list.
+> [3-add_node_end.c](https://github.com/Viestar/alx-low_level_programming/commit/)
