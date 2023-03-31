@@ -1,4 +1,4 @@
-#include "lists.h"
+#include <stdio.h>
 
 void __attribute__((constructor)) tortoise_talk(void);
 
