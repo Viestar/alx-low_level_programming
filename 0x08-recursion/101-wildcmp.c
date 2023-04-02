@@ -14,6 +14,7 @@ char *match_finder(char *str, char *match_post);
 
 int wildcmp(char *s1, char *s2)
 {
+  /* Incase of wild cards */
 	if (*s2 == '*')
 	{
 		recurse_wild(&s2);
