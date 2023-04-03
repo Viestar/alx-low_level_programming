@@ -29,6 +29,12 @@ A function that adds a new node at the beginning of a listint_t list.
 A function that adds a new node at the end of a listint_t list.
 > [3-add_nodeint_end.c](https://github.com/Viestar/alx-low_level_programming/commit/df1ea32a22922b36d5fb517d51f4410409ca0b7f)
 
+
 ## **4. Free list**
 A function that frees a listint_t list
-> [4-free_listint.c](https://github.com/Viestar/alx-low_level_programming/commit/)
+> [4-free_listint.c](https://github.com/Viestar/alx-low_level_programming/commit/dfd1d5bb4505e256ba93cec810203efd4a217cdb)
+
+
+## **5. Free**
+A function that frees a listint_t list
+> [5-free_listint2.c](https://github.com/Viestar/alx-low_level_programming/commit/)
