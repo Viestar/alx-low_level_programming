@@ -51,4 +51,5 @@ A function that returns the nth node of a listint_t linked list
 
 ## **8. Sum list**
 A function that returns the sum of all the data (n) of a listint_t linked list.
-> [8-sum_listint.c](https://github.com/Viestar/alx-low_level_programming/commit/)
+> [8-sum_listint.c](https://github.com/Viestar/alx-low_level_programming/commit/e153999b580dfe1a29989febf3dedb08c66f2192)
+
