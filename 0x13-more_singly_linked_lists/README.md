@@ -46,4 +46,9 @@ A function that deletes the head node of a listint_t linked list, and returns th
 
 ## **7. Get node at index**
 A function that returns the nth node of a listint_t linked list 
-> [7-get_nodeint.c](https://github.com/Viestar/alx-low_level_programming/commit/)
+> [7-get_nodeint.c](https://github.com/Viestar/alx-low_level_programming/commit/be88ad63cb279a85bbe4bf251d4a529dcfc09a1c)
+
+
+## **8. Sum list**
+A function that returns the sum of all the data (n) of a listint_t linked list.
+> [8-sum_listint.c](https://github.com/Viestar/alx-low_level_programming/commit/)
