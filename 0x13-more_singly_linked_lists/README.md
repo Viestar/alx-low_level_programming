@@ -17,5 +17,9 @@ A function that prints all the elements of a listint_t list.
 
 ## **1. List length**
 A function that returns the number of elements in a linked listint_t list.
-> [1. List length](https://github.com/Viestar/alx-low_level_programming/commit/)
+> [1. List length](https://github.com/Viestar/alx-low_level_programming/commit/cc32590ad4b2516b2976743be932c83d8c67a4bb)
 
+
+## **2. Add node**
+A function that adds a new node at the beginning of a listint_t list.
+> [2-add_nodeint.c](https://github.com/Viestar/alx-low_level_programming/commit/)
