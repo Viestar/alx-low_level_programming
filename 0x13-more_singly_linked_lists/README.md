@@ -34,7 +34,12 @@ A function that adds a new node at the end of a listint_t list.
 A function that frees a listint_t list
 > [4-free_listint.c](https://github.com/Viestar/alx-low_level_programming/commit/dfd1d5bb4505e256ba93cec810203efd4a217cdb)
 
-
 ## **5. Free**
 A function that frees a listint_t list
-> [5-free_listint2.c](https://github.com/Viestar/alx-low_level_programming/commit/)
+> [5-free_listint2.c](https://github.com/Viestar/alx-low_level_programming/commit/89a14b36983515103eccc009eb50ec08b5aaa3f5)
+
+
+## **6. Pop**
+A function that deletes the head node of a listint_t linked list, and returns the head node’s data (n)
+> [6-pop_listint.c](https://github.com/Viestar/alx-low_level_programming/commit/)
+
