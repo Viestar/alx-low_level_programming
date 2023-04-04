@@ -9,7 +9,12 @@ void free_listint2(listint_t **head)
 {
 	listint_t *empty_list;
 
-	while (*head && (head != NULL))
+	/* Incase the list is empty */
+	if (head == NULL)
+		return;
+
+	/* Looping through the list freeing nodes */
+	while (*head)
 	{
 		/* */
 		empty_list = (*(*head)).next;
