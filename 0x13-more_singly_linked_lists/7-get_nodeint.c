@@ -9,16 +9,22 @@
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	unsigned int nth_node = 0;
+	/* Variable to store the node to be returned */
+	unsigned int nth_node;
 
-	while (nth_node < index)
+	nth_node = 0;
+
+	/* Looping through the list until node index is reached */
+	while (head && nth_node < index)
 	{
-		if (head == NULL)
+		/* Checking if index will be reached */
+		if (head != NULL)
 		{
-			return (NULL);
+			nth_node++;
+			head = (*head).next;
 		}
-
-		head = (*head).next;
+		else
+			return (NULL);
 	}
 	return (head);
 }
