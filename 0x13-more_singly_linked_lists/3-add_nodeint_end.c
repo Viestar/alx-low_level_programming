@@ -11,7 +11,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	/* Variable to store the new list */
 	listint_t *new_list;
-	listint_t *old_list;
 
 	/* allocating memory for the new list */
 	new_list = malloc(sizeof(listint_t));
@@ -19,7 +18,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	/* Checking if any memory was allocated */
 	if (new_list == NULL)
 		return (NULL);
-
 	/* */
 	(*new_list).n = n;
 
@@ -29,17 +27,17 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	/**/
 	if (*head == NULL)
 	{
-		/* */
+		/* Incase *head was passed empty, only new node will be added */
 		*head = new_list;
 	}
 	else
 	{
-		old_list = *head;
-		;
-		while (old_list)
-			old_list = (*old_list).next;
-		(*old_list).next = new_list;
+		while ((*(*head)).next != NULL)
+			*head = (*(*head)).next;
+
+		/* Adding n to the end of the old list */
+		(*(*head)).next = new_list;
 	}
 	/* */
-	return (new_list);
+	return (*head);
 }
