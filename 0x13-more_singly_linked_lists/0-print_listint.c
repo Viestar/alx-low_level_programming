@@ -19,7 +19,7 @@ size_t print_listint(const listint_t *h)
 		/* Calculating the number of elements */
 		nodes++;
 
-		/* Printing the elements*/
+		/* Printing one elements at a time */
 		printf("%d\n", (*h).n);
 
 		/* Pointing to the next head */
