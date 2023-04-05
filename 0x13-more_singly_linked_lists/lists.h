@@ -8,17 +8,28 @@
  * @n: integer
  * @next: points to the next node
  * Description: singly linked list node structure
- * 
+ *
  */
 
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
-/* Prototypes */
-size_t print_listint(const listint_t *h); /* Prints all elements */
+/**
+ * print_listint - prints a list
+ * @h: linked list
+ * Return: number of nodes
+ */
+
+size_t print_listint(const listint_t *h);
+/**
+ * listint_len - prints length
+ * @h: linked list
+ * Return: number of nodes
+ */
+
 size_t listint_len(const listint_t *h); /* returns nos elements */
 listint_t *add_nodeint(listint_t **head, const int n);
 listint_t *add_nodeint_end(listint_t **head, const int n);
@@ -33,6 +44,5 @@ listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
-
 
 #endif /* LISTS_H */
