@@ -24,17 +24,21 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	/* Insert n at the beginning of the list*/
 	(*new_list).n = n;
 
-	/* Incase we are to insert at first index */
+	/* Incase index is 0 */
 	if (idx == 0)
 	{
-		(*new_list).next = clone;
-		clone = new_list;
+		(*new_list).n = n;
+		(*new_list).next = *head;
+		*head = new_list;
 		return (new_list);
 	}
 
-	while (counter < (idx - 1))
+	while (clone && counter < (idx - 1))
 	{
-		if ((*clone).next != NULL || clone != NULL)
+		if (clone == NULL)
+			return (NULL);
+
+		if ((*clone).next != NULL)
 		{
 			counter++;
 			clone = (*clone).next;
