@@ -14,8 +14,14 @@ int create_file(const char *filename, char *text_content)
 	int fildes, filwrt;
 
 	/* Finding length of the passed string */
-	while (text_content[string_len])
-		string_len++;
+	if (text_content)
+	{
+		while (text_content[string_len])
+			string_len++;
+	}
+
+	if (!filename)
+		return (-1);
 
 	/* openning/creating the file with permissions */
 	fildes = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
