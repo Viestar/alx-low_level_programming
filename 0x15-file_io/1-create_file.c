@@ -30,7 +30,7 @@ int create_file(const char *filename, char *text_content)
 	filwrt = write(fildes, text_content, string_len);
 
 	/* Incase no files were written */
-	if (!fildes || !filwrt)
+	if (filwrt == -1 || fildes == -1)
 		return (-1);
 
 	close(fildes);
