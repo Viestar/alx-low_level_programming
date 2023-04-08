@@ -14,13 +14,13 @@
 
 A function that reads a text file and prints it to the POSIX standard output
 
-> [0-read_textfile.c](https://github.com/Viestar/alx-low_level_programming/commit/)
+> [0-read_textfile.c](https://github.com/Viestar/alx-low_level_programming/commit/e1a084b70898c26bfe8bd025c3dc3e307655173d)
 
 ## **1. Under the snow**
 
 A function that creates a file.
 
-> [1-create_file.c](https://github.com/Viestar/alx-low_level_programming/commit/)
+> [1-create_file.c](https://github.com/Viestar/alx-low_level_programming/commit/16a247f714e1e7f38679ccc812f813e2c3a39797)
 
 ## **2. Speak gently, she can hear**
 
