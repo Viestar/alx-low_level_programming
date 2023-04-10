@@ -8,9 +8,10 @@
  */
 
 int file_copier(const char *file_from, const char *file_to, char *buffer);
+int file_closer(file);
 
 /**
- * main: Entry Point
+ * main - Entry Point
  * @argc: number of arguments
  * @argv: number of arguments
  * Return: 1 for success.
@@ -27,7 +28,7 @@ int main(int argc, char *argv[])
 	/* Checking if memory was allocated */
 	if (buffer == NULL)
 	{
-		dprintf(STDERR_FILENO, "Can't create buffer");
+		dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
 		return (99);
 	}
 
@@ -54,12 +55,12 @@ int main(int argc, char *argv[])
 int file_copier(const char *file_from, const char *file_to, char *buffer)
 {
 
-	int filfrm, filto, filred, filwrt, desclo;
+	int filfrm, filto, filred, filwrt;
 
 	/* Checking if file is empty */
 	if (file_from == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE");
+		dprintf(STDERR_FILENO, "Error: Can't read from %s", file_from);
 		exit(98);
 	}
 
@@ -91,19 +92,29 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
 	} while (filred > 0);
 
 	free(buffer);
-
-	desclo = close(filfrm);
-	if (desclo == -1)
-	{
-		dprintf(STDERR_FILENO, "Error Can't close fd %s\n", file_from);
-		return (100);
-	}
-	desclo = close(filto);
-	if (desclo == -1)
-	{
-		dprintf(STDERR_FILENO, "Error Can't close fd %s\n", file_to);
-		return (100);
-	}
+	file_closer(filfrm);
+	file_closer(filto);
 
 	return (0);
+}
+
+/**
+ * file_closer - Closes a passed file
+ * @file: file to be closed
+ * Return: 1 for success or -1 if failed
+ */
+
+int file_closer(file)
+{
+	int desclo;
+
+	desclo = close(file);
+
+	if (desclo == -1)
+	{
+		dprintf(STDERR_FILENO, "Error Can't close fd %s\n", file);
+		return (100);
+	}
+
+	return (1);
 }
