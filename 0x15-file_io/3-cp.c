@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	/* Checking if memory was allocated */
 	if (buffer == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 
@@ -37,6 +37,7 @@ int main(int argc, char *argv[])
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
+		free(buffer);
 	}
 
 	file_copier(argv[1], argv[2], buffer);
@@ -60,7 +61,8 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
 	/* Checking if file is empty */
 	if (file_from == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from %s", file_from);
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", file_from);
+		free(buffer);
 		exit(98);
 	}
 
@@ -68,11 +70,14 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
 	filred = read(filfrm, buffer, 1024);
 	filto = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	do {
+	while (filred > 0)
+	{
 		/* Incase we can not read from the file */
 		if (filred == -1 || filfrm == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+			free(buffer);
+			file_closer(filfrm);
 			exit(98);
 		}
 
@@ -82,13 +87,14 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
 		if (filwrt == -1 || filto == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
+			free(buffer);
+			file_closer(filto);
 			exit(99);
 		}
 
 		filred = read(filfrm, buffer, 1024);
 		filto = open(file_to, O_WRONLY | O_APPEND);
-
-	} while (filred > 0);
+	}
 
 	free(buffer);
 	file_closer(filfrm);
