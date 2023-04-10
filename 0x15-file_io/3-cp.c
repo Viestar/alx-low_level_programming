@@ -70,8 +70,7 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
 	filred = read(filfrm, buffer, 1024);
 	filto = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	while (filred > 0)
-	{
+	do {
 		/* Incase we can not read from the file */
 		if (filred == -1 || filfrm == -1)
 		{
@@ -94,7 +93,7 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
 
 		filred = read(filfrm, buffer, 1024);
 		filto = open(file_to, O_WRONLY | O_APPEND);
-	}
+	} while (filred > 0);
 
 	free(buffer);
 	file_closer(filfrm);
