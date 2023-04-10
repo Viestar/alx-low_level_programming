@@ -29,14 +29,14 @@ int main(int argc, char *argv[])
 	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
-		return (99);
+		exit (99);
 	}
 
 	/* Checking for the number of arguments */
 	if (argc < 3 || argc > 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		return (97);
+		exit (97);
 	}
 
 	file_copier(argv[1], argv[2], buffer);
@@ -68,8 +68,7 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
 	filred = read(filfrm, buffer, 1024);
 	filto = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	do
-	{
+	do {
 		/* Incase we can not read from the file */
 		if (filred == -1 || filfrm == -1)
 		{
