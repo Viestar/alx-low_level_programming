@@ -29,14 +29,14 @@ int main(int argc, char *argv[])
 	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
-		exit (99);
+		exit(99);
 	}
 
 	/* Checking for the number of arguments */
 	if (argc < 3 || argc > 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit (97);
+		exit(97);
 	}
 
 	file_copier(argv[1], argv[2], buffer);
