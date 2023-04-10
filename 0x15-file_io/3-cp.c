@@ -94,7 +94,7 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
 	file_closer(filfrm);
 	file_closer(filto);
 
-	exit(0);
+	return (0);
 }
 
 /**
