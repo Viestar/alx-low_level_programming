@@ -8,7 +8,7 @@
  */
 
 int file_copier(const char *file_from, const char *file_to, char *buffer);
-int file_closer(file);
+void file_closer(int file);
 
 /**
  * main - Entry Point
@@ -74,7 +74,7 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
 		if (filred == -1 || filfrm == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
-			return (98);
+			exit(98);
 		}
 
 		filwrt = write(filto, buffer, 1024);
@@ -83,7 +83,7 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
 		if (filwrt == -1 || filto == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
-			return (99);
+			exit(99);
 		}
 
 		filred = read(filfrm, buffer, 1024);
@@ -95,7 +95,7 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
 	file_closer(filfrm);
 	file_closer(filto);
 
-	return (0);
+	exit(0);
 }
 
 /**
@@ -104,7 +104,7 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
  * Return: 1 for success or -1 if failed
  */
 
-int file_closer(file)
+void file_closer(int file)
 {
 	int desclo;
 
@@ -112,9 +112,7 @@ int file_closer(file)
 
 	if (desclo == -1)
 	{
-		dprintf(STDERR_FILENO, "Error Can't close fd %s\n", file);
-		return (100);
+		dprintf(STDERR_FILENO, "Error Can't close fd %d\n", file);
+		exit(100);
 	}
-
-	return (1);
 }
