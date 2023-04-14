@@ -131,16 +131,19 @@ void type_printer(unsigned char *e_ident, unsigned int e_type)
 {
 	if (e_ident[EI_DATA == ELFDATA2MSB])
 		e_type = e_type >> 8;
+
 	printf("  Type:                              ");
 
-	if (e_type == ET_REL)
+	if (e_type == ET_NONE)
+		printf("DYN (Share Object file)\n");
+
+	else if (e_type == ET_REL)
 		printf("REL (Relocatable file)\n");
-	else if (e_type == ET_NONE)
-		printf("NONE (None)\n");
 	else if (e_type == ET_EXEC)
 		printf("EXEC (Executable file)\n");
 	else if (e_type == ET_DYN)
-		printf("DYN (Share Object file)\n");
+		printf("NONE (None)\n");
+
 	else if (e_type == ET_CORE)
 		printf("CORE (Core file)\n");
 	else
