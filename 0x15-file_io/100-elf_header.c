@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
 	os_abi_printer((*elf_head).e_ident);  /* OS/ABI */
 
 	/*Printing ABI Version */
-	printf("  ABI Version:                       %d\n",
+	printf("ABI Version:%d\n",
 		   (*elf_head).e_ident[EI_ABIVERSION]);
 
 	type_printer((*elf_head).e_ident, (*elf_head).e_type);	 /* Type */
@@ -106,7 +106,7 @@ void file_closer(int file)
  */
 void entry_printer(unsigned char *e_ident, unsigned long int e_entry)
 {
-	printf("  Entry point address:               ");
+	printf("Entry point address:");
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 	{
 		e_entry = ((e_entry << 8) & 0xFF00FF00) |
@@ -132,18 +132,16 @@ void type_printer(unsigned char *e_ident, unsigned int e_type)
 	if (e_ident[EI_DATA == ELFDATA2MSB])
 		e_type = e_type >> 8;
 
-	printf("  Type:                              ");
+	printf("Type:");
 
 	if (e_type == ET_NONE)
-		printf("DYN (Share Object file)\n");
-
+		printf("NONE (None)\n");
 	else if (e_type == ET_REL)
 		printf("REL (Relocatable file)\n");
 	else if (e_type == ET_EXEC)
 		printf("EXEC (Executable file)\n");
 	else if (e_type == ET_DYN)
-		printf("NONE (None)\n");
-
+		printf("DYN (Share Object file)\n");
 	else if (e_type == ET_CORE)
 		printf("CORE (Core file)\n");
 	else
@@ -156,7 +154,7 @@ void type_printer(unsigned char *e_ident, unsigned int e_type)
  */
 void os_abi_printer(unsigned char *e_ident)
 {
-	printf("  OS/ABI:                            ");
+	printf("OS/ABI:");
 	switch (e_ident[EI_OSABI])
 	{
 	case ELFOSABI_HPUX:
@@ -200,7 +198,7 @@ void os_abi_printer(unsigned char *e_ident)
  */
 void version_printer(unsigned char *e_ident)
 {
-	printf("  Version:                           %d", e_ident[EI_VERSION]);
+	printf("Version:%d", e_ident[EI_VERSION]);
 	if (e_ident[EI_VERSION == EV_CURRENT])
 		printf("(current)\n");
 	else
@@ -213,7 +211,7 @@ void version_printer(unsigned char *e_ident)
  */
 void data_printer(unsigned char *e_ident)
 {
-	printf("  Data:                              ");
+	printf("Data:");
 	if (e_ident[EI_DATA] == ELFDATANONE)
 		printf("none\n");
 	else if (e_ident[EI_DATA] == ELFDATA2MSB)
@@ -231,7 +229,7 @@ void data_printer(unsigned char *e_ident)
 
 void class_printer(unsigned char *e_ident)
 {
-	printf("  Class:                             ");
+	printf("Class:");
 	if (e_ident[EI_CLASS] == ELFCLASSNONE)
 		printf("none\n");
 	else if (e_ident[EI_CLASS] == ELFCLASS32)
@@ -253,7 +251,7 @@ void magic_printer(unsigned char *e_ident)
 
 	count = 0;
 
-	printf("  Magic:   ");
+	printf("Magic:");
 	while (count < EI_NIDENT)
 	{
 		printf("%02x", e_ident[count]);
