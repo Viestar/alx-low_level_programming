@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
 	os_abi_printer((*elf_head).e_ident);  /* OS/ABI */
 
 	/*Printing ABI Version */
-	printf("  ABI Version:                       %d",
+	printf("  ABI Version:                       %d\n",
 		   (*elf_head).e_ident[EI_ABIVERSION]);
 
 	type_printer((*elf_head).e_ident, (*elf_head).e_type);	 /* Type */
