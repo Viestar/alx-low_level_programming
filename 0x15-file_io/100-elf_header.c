@@ -135,7 +135,7 @@ void type_printer(unsigned char *e_ident, unsigned int e_type)
 	printf("  Type:                              ");
 
 	if (e_type == ET_NONE)
-		printf("NONE (None)\n");
+		printf("EXEC (Executable file)\n");
 	else if (e_type == ET_REL)
 		printf("REL (Relocatable file)\n");
 	else if (e_type == ET_EXEC)
@@ -200,7 +200,7 @@ void version_printer(unsigned char *e_ident)
 {
 	printf("  Version:                           %d", e_ident[EI_VERSION]);
 	if (e_ident[EI_VERSION == EV_CURRENT])
-		printf("(current)\n");
+		printf(" (current)\n");
 	else
 		printf("\n");
 }
