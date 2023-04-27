@@ -22,22 +22,30 @@ int main(int argc, char *argv[])
 {
 	char *buffer;
 
-	/* Allocating space for the copying buffer */
-	buffer = malloc(sizeof(char) * 1024);
+	/* Checking for the number of arguments */
+	if (argc < 3 || argc > 3)
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
+
+	/* Checking if file is empty */
+	if (argv[1] == NULL)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
+		exit(98);
+	}
+	else
+	{
+		/* Allocating space for the copying buffer */
+		buffer = malloc(sizeof(char) * 1024);
+	}
 
 	/* Checking if memory was allocated */
 	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
-	}
-
-	/* Checking for the number of arguments */
-	if (argc < 3 || argc > 3)
-	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
-		free(buffer);
 	}
 
 	file_copier(argv[1], argv[2], buffer);
@@ -58,19 +66,12 @@ int file_copier(const char *file_from, const char *file_to, char *buffer)
 
 	int filfrm, filto, filred, filwrt;
 
-	/* Checking if file is empty */
-	if (file_from == NULL)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", file_from);
-		free(buffer);
-		exit(98);
-	}
-
 	filfrm = open(file_from, O_RDONLY);
 	filred = read(filfrm, buffer, 1024);
 	filto = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	do {
+	do
+	{
 		/* Incase we can not read from the file */
 		if (filred == -1 || filfrm == -1)
 		{
@@ -116,7 +117,7 @@ void file_closer(int file)
 
 	if (desclo == -1)
 	{
-		dprintf(STDERR_FILENO, "Error Can't close fd %d\n", file);
+		dprintf(STDERR_FILENO, "Error: Can't close fd\n");
 		exit(100);
 	}
 }
