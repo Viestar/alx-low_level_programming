@@ -199,7 +199,7 @@ void os_abi_printer(unsigned char *e_ident)
 void version_printer(unsigned char *e_ident)
 {
 	printf("  Version:                           %d", e_ident[EI_VERSION]);
-	if (e_ident[EI_VERSION == EV_CURRENT])
+	if (e_ident[EI_VERSION] == EV_CURRENT)
 		printf(" (current)\n");
 	else
 		printf("\n");
