@@ -4,17 +4,18 @@
 #include <fcntl.h>	/* File Modes */
 #include <elf.h>	/* Elf64_Ehdr */
 #include <sys/types.h>
+#include <sys/stat.h>
 
 /* Prototypes */
 void file_closer(int file);
-void elf_checker(unsigned char *e_ident);
-void os_abi_printer(unsigned char *e_ident);
-void type_printer(unsigned char *e_ident, unsigned int e_type);
 void entry_printer(unsigned char *e_ident, unsigned long int e_entry);
 void magic_printer(unsigned char *e_ident);
 void class_printer(unsigned char *e_ident);
 void data_printer(unsigned char *e_ident);
 void version_printer(unsigned char *e_ident);
+void elf_checker(unsigned char *e_ident);
+void os_abi_printer(unsigned char *e_ident);
+void type_printer(unsigned char *e_ident, unsigned int e_type);
 
 /**
  * main - Displays ELF_header infomation at the start of an ELF file.
@@ -246,9 +247,7 @@ void class_printer(unsigned char *e_ident)
 
 void magic_printer(unsigned char *e_ident)
 {
-	int count;
-
-	count = 0;
+	int count = 0;
 
 	printf("  Magic:   ");
 	while (count < EI_NIDENT)
@@ -270,16 +269,15 @@ void magic_printer(unsigned char *e_ident)
 
 void elf_checker(unsigned char *e_ident)
 {
-	int count;
+	int count = 0;
 
-	count = 0;
-
+	/* Checking for elf file */
 	while (count < 4)
 	{
 		if (e_ident[count] != 127 && e_ident[count] != 'E' &&
 			e_ident[count] != 'L' && e_ident[count] != 'F')
 		{
-			dprintf(STDERR_FILENO, "Error: File not an ELF\n");
+			dprintf(STDERR_FILENO, "Error: File is not an ELF format.\n");
 			exit(98);
 		}
 		count++;
