@@ -6,3 +6,4 @@
 ## 4-free_dlistint.c
 ## 5-get_dnodeint.c
 ## 6-sum_dlistint.c
+## 7-insert_dnodeint.c
