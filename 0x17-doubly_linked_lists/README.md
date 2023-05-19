@@ -7,3 +7,4 @@
 ## 5-get_dnodeint.c
 ## 6-sum_dlistint.c
 ## 7-insert_dnodeint.c
+## 8-delete_dnodeint.c
