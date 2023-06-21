@@ -8,7 +8,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *hash_node;
-	unsigned char jointer = 400;
+	unsigned char jointer = 1;
 	unsigned long int index = 0;
 
 	if (ht == NULL)
@@ -19,7 +19,7 @@ void hash_table_print(const hash_table_t *ht)
 	{
 		if (ht->array[index] != NULL)
 		{
-			if (jointer == 100)
+			if (jointer == 0)
 				printf(", ");
 
 			hash_node = ht->array[index];
@@ -30,7 +30,7 @@ void hash_table_print(const hash_table_t *ht)
 				if (hash_node != NULL)
 					printf(", ");
 			}
-			jointer = 100;
+			jointer = 0;
 		}
 		index++;
 	}
