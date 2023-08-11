@@ -1,11 +1,5 @@
-# Target dependencies
-school : main.o school.o
 
-# Commands or rules
- all : main.c school.c
-	echo "Compilling files"
+all : main.c school.c
 	gcc main.c school.c -o school
-	
-clean :
-	@echo "Deleting school and all .o files"
-	@rm -f school *.o
+
+    
