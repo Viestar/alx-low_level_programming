@@ -6,6 +6,5 @@ TASK NUMBER | LINK TO TASK CODE | TASK DESCRIPTION
 ----- | ------ | ----------
 [Req] | [README](./README.md) | Project Documentation
 [Req] | [Header file](./search_algos.h) | Project HeaderFile.
-[0x00] | [make -f 0-Makefile](./0-Makefile) | Created my first Makefile
-[0x01] | [make -f 1-Makefile](./1-Makefile) | Created my second Makefile
-[0x02] | [make -f 2-Makefile](./2-Makefile) | Created my second Makefile
+[0x00] | [Linear search](./0-linear.c) | finds a given item by iteration through the whole list
+[0x01] | [Binary](./1-binary.c) | finds a given item by divide and conquer
