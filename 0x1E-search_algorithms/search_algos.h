@@ -1,6 +1,6 @@
 #ifndef SEARCH_ALGO_H
 #define SEARCH_ALGO_H
-#include <stdio.h>  /* printf */
+#include <stdio.h>	/* printf */
 #include <stdlib.h> /* size_t */
 
 /**
@@ -14,9 +14,9 @@
  */
 typedef struct listint_s
 {
-    int n;
-    size_t index;
-    struct listint_s *next;
+	int n;
+	size_t index;
+	struct listint_s *next;
 } listint_t;
 
 /* Prototypes */
