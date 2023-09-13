@@ -40,7 +40,6 @@ int jump_search(int *array, size_t size, int value)
 
 		if (array[index_two] == value)
 		{
-			printf("Found %d at index : %d\n", array[index_two], index_two);
 			return (index_two);
 		}
 	}
