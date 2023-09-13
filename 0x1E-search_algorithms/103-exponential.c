@@ -19,7 +19,7 @@ int binary_search_exp(int *array, int low, int high, int value)
 		printf("Value checked array[%d] = [%d]\n", mid, array[mid]);
 
 		if (array[mid] == value)
-			return mid;
+			return (mid);
 
 		if (array[mid] < value)
 			low = mid + 1;
@@ -31,7 +31,8 @@ int binary_search_exp(int *array, int low, int high, int value)
 }
 
 /**
- * exponential_search - Searches for a value in a sorted array using Exponential search.
+ * exponential_search - Searches for a value in a sorte
+ * d array using Exponential search.
  * @array: Pointer to the first element of the array.
  * @size: Number of elements in the array.
  * @value: The value to search for.
@@ -47,7 +48,7 @@ int exponential_search(int *array, size_t size, int value)
 	if (array[0] == value)
 	{
 		printf("Value checked array[0] = [%d]\n", array[0]);
-		return 0;
+		return (0);
 	}
 
 	while (bound < (int)size && array[bound] < value)
